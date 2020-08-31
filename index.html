@@ -1,0 +1,788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рассылка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+.col2 {
+  width: 50px;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+.yz {
+  height: 10px;
+}
+
+th.color {
+  background: #17e7a1;
+  padding-left: 10px;
+}
+
+th.color p {
+  color: white;
+  font-size: 14px;
+}
+
+.stat {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.number {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nalichie {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.skidka {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.skidkamal {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.order {
+  font-size: 11px;
+  font-weight: 100;
+}
+
+.kons {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.tel {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.tovar img {
+  width: 40px;
+}
+
+.summ {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul.menu li {
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 24px; /* Отступ слева */
+  border: 0; /* Рамка вокруг текста */
+  padding: 0px; /* Поля вокруг текста */
+  color: blue;
+  font-size: 14px;
+}
+
+.wrap-td-header {
+  height: 100px;
+}
+
+.helloblock h2 {
+  font-size: 18px;
+}
+
+.helloblock p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+h2 {
+  text-align: left;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  color: black;
+}
+
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+table td {
+  border-collapse: collapse;
+}
+
+table {
+  width: 600px;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-device-width: 280px) {
+  ul.menu li {
+    display: block;
+    text-align: right;
+    font-size: 6px;
+  }
+  .name p {
+    font-size: 4px;
+  }
+  .number {
+    font-size: 4px;
+  }
+  .nalichie {
+    font-size: 4px;
+  }
+  .summ {
+    font-size: 4px;
+  }
+  .helloblock p {
+    font-size: 4px;
+  }
+  .desc img {
+    width: 98%;
+  }
+  .order p {
+    font-size: 4px;
+  }
+  .tel {
+    font-size: 4px;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  ul.menu li {
+    display: block;
+    text-align: right;
+  }
+  .name p {
+    font-size: 9px;
+  }
+  .number {
+    font-size: 11px;
+  }
+  .nalichie {
+    font-size: 9px;
+  }
+  .summ {
+    font-size: 11px;
+  }
+  .helloblock p {
+    font-size: 9px;
+  }
+  .desc img {
+    width: 100%;
+  }
+  .order p {
+    font-size: 8px;
+  }
+  .tel {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-device-width: 415px) {
+  ul.menu li {
+    display: block;
+    text-align: right;
+  }
+  .tovar img {
+    width: 100%;
+  }
+  .name p {
+    font-size: 9px;
+  }
+  .number {
+    font-size: 11px;
+  }
+  .nalichie {
+    font-size: 9px;
+  }
+  .summ {
+    font-size: 11px;
+  }
+  .helloblock p {
+    font-size: 9px;
+  }
+  .desc img {
+    width: 100%;
+  }
+  .order p {
+    font-size: 8px;
+  }
+
+  .tel {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  ul.menu li {
+    display: block;
+    text-align: right;
+  }
+  .tovar img {
+    width: 100%;
+  }
+  .name p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-device-width: 565px) {
+  ul.menu li {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-device-width: 590px) {
+  ul.menu li {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  a[href^="tel"],
+  a[href^="sms"] {
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+  }
+  .mobile_link a[href^="tel"],
+  .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    pointer-events: auto;
+    cursor: default;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  a[href^="tel"],
+  a[href^="sms"] {
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .mobile_link a[href^="tel"],
+  .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    pointer-events: auto;
+    cursor: default;
+  }
+}
+    </style>
+  </head>
+  <body style="max-width:600px; width:100%;">
+    <table style="max-width:600px; width:100%;" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" align="center">
+      <tbody>
+      <tr>
+        <th colspan="10" class="wrap-td-header">
+          <img src="foto/logo.png" alt="Логотип компании Domotehnika">
+        </th>
+        <th colspan="18" class="wrap-td-header">
+          <ul class="menu">
+            <li id="outlook"><a href="https://domotehnika.by/catalog/">Каталог</a></li>
+            <li id="outlook"><a href="https://domotehnika.by/promotions/">Акции и скидки</a></li>
+            <li id="outlook"><a href="https://domotehnika.by/installment/">Рассрочка</a></li>
+        </ul>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="28"><img width="100%" src="foto/Group 31.png" alt="Ваш заказ принят в работу"></th>
+      </tr>
+      <tr>
+        <td></td>
+      <th colspan="26" class="helloblock"><h2>Здравствуйте, Ольга!</h2><p>
+          Спасибо за заказ в интернет-магазине Домотехника.
+          В ближайшее время мы свяжемся с Вами по номеру +375 (29) 123-45-67. В рабочее время мы обычно перезваниваем в течение 20 мин (с 9:00 до 20:00 в будние дни и с 10:00 до 19:00 в выходные дни).</p></th>
+          <td></td>
+      </tr>
+      <tr>
+        <td class="col2"></td>
+        <th colspan="26" class="color"><p>Товары в заказе</p></th>
+        <td class="col3"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="10" class="stat">
+          <p>Наименование товара, статус</p>
+        </th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="stat"><p>Кол-во</p></th>
+        <td></td>
+        <td></td>
+        <th colspan="2" class="stat"><p>Цена</p></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="2" class="stat"><p>Сумма</p></th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th rowspan="2" class="tovar"><img src="foto/image 50.png" alt="Стирально-сушильная машина Electrolux EW7WR468W"></th>
+        <td></td>
+        <td></td>
+        <th colspan="11" class="name"><a href="https://domotehnika.by/catalog/stiralnye-mashiny/electrolux/electrolux-ew7wr468w/"><p>Стирально-сушильная машина Electrolux EW7WR468W</p></a></th>
+        <td class="name"><p>1</p></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <table>
+            <tr>
+              <td>
+<img src="foto/Group 5.png" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+<p class="number">2 635р.</p>
+              </td>
+            </tr>
+          </table>
+        </>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="number"><p>2 635р.</p></th>
+        <td></td>
+      </tr>
+      <tr class="yz">
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="nalichie"><p>В резерве</p></th>
+        <td><img src="foto/reserve.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26"><img src="foto/Rectangle 2.png" alt=""></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th rowspan="2" class="tovar"><img src="foto/image 50.png" alt="Стирально-сушильная машина Electrolux EW7WR468W"></th>
+        <td></td>
+        <td></td>
+        <th colspan="11" class="name"><a href="https://domotehnika.by/catalog/stiralnye-mashiny/electrolux/electrolux-ew7wr468w/"><p>Стирально-сушильная машина Electrolux EW7WR468W</p></a></th>
+        <td class="name"><p>1</p></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="number"><p>2 635 р.</p></th>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="number"><p>2 635 р.</p></th>
+        <td></td>
+      </tr>
+      <tr class="yz">
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="nalichie"><p>В наличии</p></th>
+        <td><img src="foto/TБheck.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26"><img src="foto/Rectangle 2.png" alt=""></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th rowspan="2" class="tovar"><img src="foto/image 50.png" alt="Стирально-сушильная машина Electrolux EW7WR468W"></th>
+        <td></td>
+        <td></td>
+        <th colspan="11" class="name"><a href="https://domotehnika.by/catalog/stiralnye-mashiny/electrolux/electrolux-ew7wr468w/"><p>Стирально-сушильная машина Electrolux EW7WR468W</p></a></th>
+        <td class="name"><p>1</p></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="number"><p>2 635 р.</p></th>
+        <td></td>
+        <td></td>
+        <th colspan="3" class="number"><p>2 635 р.</p></th>
+        <td></td>
+      </tr>
+      <tr class="yz">
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="6" class="nalichie"><p>Под заказ до 45 дней</p></th>
+        <td><img src="foto/order.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26"><img src="foto/Rectangle 2.png" alt=""></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="2"><img src="foto/10 935 р..png" alt=""></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="9" class="summ"><p>Итоговая стоимость:</p></th>
+        <th colspan="4" class="summ"><p>10 540р.</p></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="9" class="summ"><p>Стоимость доставки:</p></th>
+        <th colspan="5" class="summ"><p>бесплатно</p></th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="col2"></td>
+        <th colspan="26" class="color"><p>Доставка и оплата</p></th>
+        <td class="col3"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="6" class="stat"><p>Способ доставки</p></th>
+        <td></td>
+        <th colspan="5" class="stat"><p>Адрес доставки</p></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="5" class="stat"><p>Способ оплаты</p></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="helloblock"><p>Курьером</p></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="11" class="helloblock"><p>Минск, ул. Авангардная, д. 100, кв. 11</p></th>
+        <td></td>
+        <th colspan="6" class="helloblock"><p>Наличными при получении</p></th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="col2"></td>
+        <th colspan="26" class="color"><p>Дополнительно</p></th>
+        <td class="col3"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26" class="helloblock"><p>Обращаем Ваше внимание, что товар Стирально-сушильная машина Electrolux EW7WR468W зарезервирован. Менеджер уточнит возможность доставки товара.</p>
+        <p>Товар Посудомоечная машина Electrolux EW7WR468W будет доставлен специально для Вас согласно договору.</p></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26" class="skidka"><h2>Покупайте комплекты техники со скидкой!</h2>
+        <p class="skidkamal">При заказе от 2-ух товаров вы получаете скидку на весь комплект техники.</p></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26"><img width="100%" src="foto/Group 29.png" alt=""></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26" class="skidka"><h2> “Домотехника” предлагает Вам:</h2></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <th colspan="2" class="desc"><img src="foto/certificate.png" alt=""></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="2" class="desc"><img src="foto/pack.png" alt=""></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="2" class="desc"><img src="foto/storage.png" alt=""></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th colspan="2" class="desc"><img src="foto/order2.png" alt=""></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="5" class="order"><p>Бытовая техника от официального импортера</p></th>
+        <td></td>
+        <td></td>
+        <th colspan="5" class="order"><p>Скидки на комплекты товаров</p></th>
+        <td></td>
+        <th colspan="6" class="order"><p>Бесплатное хранение на складе</p></th>
+        <td></td>
+        <th colspan="6" class="order"><p>Бесплатная доставка и доставка под заказ</p></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="26" class="kons"><p>Если вы хотите узнать статус заказа или у вас возникли вопросы, можете связаться с нами одним из способов:</p></th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><img src="foto/phone.png" alt=""></td>
+        <td></td>
+        <th colspan="6" class="tel"><a href="tel:+375 (17) 336-40-44">+375 (17) 336-40-44</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="foto/viber color.png" alt=""></td>
+        <td></td>
+        <th colspan="6" class="tel"><a href="tel:+375 (29) 696-06-39">+375 (29) 696-06-39</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><img src="foto/phone.png" alt=""></td>
+        <td></td>
+        <th colspan="6" class="tel"><a href="tel:+375 (44) 500-74-74">+375 (44) 500-74-74</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="foto/skype color.png" alt=""></td>
+        <td></td>
+        <th colspan="6" class="tel"><a href="skype:[Domotehnika .by]?chat">www.domotehnika.by</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><img src="foto/phone.png" alt=""></td>
+        <td></td>
+        <th colspan="6" class="tel"><a href="tel:+375 (29) 801-74-74">+375 (29) 801-74-74</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="foto/mail color.png" alt=""></td>
+        <td></td>
+        <th colspan="6" class="tel"><a href="mailto:zakaz@domotehnika.by">zakaz@domotehnika.by</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><img src="foto/phone.png" alt=""></td>
+        <td></td>
+        <th colspan="6" class="tel"><a href="tel:+375 (25) 500-74-74">+375 (25) 500-74-74</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <tr>
+          <th colspan="28"><img width="100%" src="foto/Group 37.png" alt=""></th>
+        </tr>
+      </tr>
+    </tbody>
+    </table>
+  </body>
+</html>
